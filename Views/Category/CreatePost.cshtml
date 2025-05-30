@@ -1,0 +1,110 @@
+@model ExchangeWebsite.Models.Post
+@{
+    ViewData["Title"] = "Create Post";
+    var categories = ViewBag.Categories as List<ExchangeWebsite.Models.Category>;
+    var conditions = ViewBag.Conditions as List<string>;
+    var languages = ViewBag.Languages as List<string>;
+  
+}
+
+<h2>Create Post</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (ViewBag.Errors != null)
+{
+    <ul>
+    @foreach (var error in ViewBag.Errors)
+    {
+        <li>@error</li>
+    }
+    </ul>
+}
+
+@using (Html.BeginForm("CreatePost", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div>
+        <label>posting title</label>
+        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+    </div>
+    <div>
+        <label>price</label>
+        @Html.TextBoxFor(m => m.Price, new { @class = "form-control", type = "number", step = "0.01" })
+        <label>city or neighborhood</label>
+        @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+        <label>ZIP code</label>
+        @Html.TextBoxFor(m => m.ZipCode, new { @class = "form-control" })
+    </div>
+    <div>
+        <label>description</label>
+        @Html.TextAreaFor(m => m.Description, 8, 80, new { @class = "form-control" })
+    </div>
+    <fieldset>
+        <legend>posting details</legend>
+        <label>make / manufacturer</label>
+        @Html.TextBoxFor(m => m.Make, new { @class = "form-control" })
+        <label>model name / number</label>
+        @Html.TextBoxFor(m => m.ModelNumber, new { @class = "form-control" })
+        <label>condition</label>
+        @Html.DropDownListFor(m => m.Condition, new SelectList(conditions), "--", new { @class = "form-control" })
+        <label>language of posting</label>
+        @Html.DropDownList("Language", new SelectList(languages), "english", new { @class = "form-control" })
+        <div>
+            @Html.CheckBoxFor(m => m.CryptocurrencyAccepted) cryptocurrency ok
+            @Html.CheckBoxFor(m => m.DeliveryAvailable) delivery available
+        </div>
+        <div>
+            @Html.DropDownListFor(
+                m => m.CategoryId,
+                new SelectList(categories, "CategoryId", "CategoryName"),
+                "-- select sub-category --",
+                new { @class = "form-control" }
+            )
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>reply options</legend>
+        <label>email</label>
+        @Html.TextBoxFor(m => m.ContactEmail, new { @class = "form-control", type = "email" })
+        <div>
+            @Html.CheckBox("ShowEmail", true) CL mail relay
+            <br />
+            @Html.CheckBox("CLChat", false) CL chat (new)
+            <br />
+
+
+        @Html.CheckBox("PublishPhoneNumber", false) publish phone number
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "phone number" })
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>location info</legend>
+        @Html.CheckBoxFor(m => m.ShowAddress) show address
+        <div>
+            <label>street</label>
+            <input type="text" name="Street" class="form-control" />
+            <label>cross street</label>
+            <input type="text" name="CrossStreet" class="form-control" />
+            <label>city</label>
+            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
+        </div>
+    </fieldset>
+    <div>
+        <label>Post Images</label>
+        <input type="file" name="images" multiple class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">continue</button>
+}
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,74 @@
+﻿@model ExchangeWebsite.Models.Category  
+@{  
+    ViewData["Title"] = Model.CategoryName;  
+    var posts = ViewBag.Posts as List<ExchangeWebsite.Models.Post>;  
+    var query = Context.Request.Query; // Fix: Use Context.Request.Query to access query parameters  
+}  
+
+<h1>@Model.CategoryName</h1>  
+
+<form method="get" asp-action="Index" asp-controller="Category" class="mb-4">  
+    <input type="hidden" name="id" value="@Model.CategoryId" />  
+    <div class="row g-2 align-items-end">  
+        <div class="col-md-4">  
+            <label for="subCategoryId" class="form-label">Sub-Category</label>  
+            <select id="subCategoryId" name="subCategoryId" class="form-select">  
+                <option value="">All Sub-Categories</option>  
+                @foreach (var sub in Model.SubCategories)  
+                {  
+                    <option value="@sub.CategoryId" selected="@(query["subCategoryId"] == sub.CategoryId.ToString())">@sub.CategoryName</option>  
+                }  
+            </select>  
+        </div>  
+        <div class="col-md-4">  
+            <label for="sort" class="form-label">Sort By</label>  
+            <select id="sort" name="sort" class="form-select">  
+                <option value="">Sort By</option>  
+                @foreach (var sortOption in new[] { "date_desc", "date_asc", "price_asc", "price_desc" })  
+                {  
+                    <option value="@sortOption" selected="@(query["sort"] == sortOption)">  
+                        @(sortOption == "date_desc" ? "Newest" : sortOption == "date_asc" ? "Oldest" : sortOption == "price_asc" ? "Price: Low to High" : "Price: High to Low")  
+                    </option>  
+                }  
+            </select>  
+        </div>  
+        <div class="col-md-4">  
+            <button type="submit" class="btn btn-primary w-100">Filter</button>  
+        </div>  
+    </div>  
+</form>  
+
+<ul>  
+    @foreach (var sub in Model.SubCategories.OrderBy(s => s.DisplayOrder))  
+    {  
+        <li>@sub.CategoryName</li>  
+    }  
+</ul>  
+
+@if (posts != null && posts.Any())  
+{  
+    <div class="row">  
+        @foreach (var post in posts)  
+        {  
+            <div class="col-md-4 mb-4">  
+                <div class="card h-100">  
+                    <a href="@Url.Action("Post", "Category", new { id = post.PostId })" style="text-decoration:none;color:inherit;">  
+                        @if (post.PostImages != null && post.PostImages.Any())  
+                        {  
+                            <img src="@post.PostImages.First().ImagePath" class="card-img-top" style="height:200px;object-fit:cover;" />  
+                        }  
+                        <div class="card-body">  
+                            <h5 class="card-title">@post.Title</h5>  
+                            <p class="card-text text-success"><strong>@(post.Price.HasValue ? post.Price.Value.ToString("C0") : "")</strong></p>  
+                            <p class="card-text">@post.Description</p>  
+                            <p class="card-text"><small class="text-muted">@post.City, @post.ZipCode</small></p>  
+                            <div class="text-muted" style="font-size:small;">  
+                                Posted @post.PostedAt.ToLocalTime().ToString("g")  
+                            </div>  
+                        </div>  
+                    </a>  
+                </div>  
+            </div>  
+        }  
+    </div>  
+}

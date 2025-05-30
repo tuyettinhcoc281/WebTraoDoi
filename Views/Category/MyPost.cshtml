@@ -1,0 +1,44 @@
+@{
+    ViewData["Title"] = "My Posts";
+    var posts = ViewBag.Posts as List<ExchangeWebsite.Models.Post>;
+}
+
+<h1>My Posts</h1>
+@if (posts != null && posts.Any())
+{
+    <div class="row">
+        @foreach (var post in posts)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="@Url.Action("Post", "Category", new { id = post.PostId })" style="text-decoration:none;color:inherit;">
+                        @if (post.PostImages != null && post.PostImages.Any())
+                        {
+                            <img src="@post.PostImages.First().ImagePath" class="card-img-top" style="height:200px;object-fit:cover;" />
+                        }
+                        <div class="card-body">
+                            <h5 class="card-title">@post.Title</h5>
+                            <p class="card-text text-success"><strong>@(post.Price.HasValue ? post.Price.Value.ToString("C0") : "")</strong></p>
+                            <p class="card-text">@post.Description</p>
+                            <p class="card-text"><small class="text-muted">@post.City, @post.ZipCode</small></p>
+                            <div class="text-muted" style="font-size:small;">
+                                Posted @post.PostedAt.ToLocalTime().ToString("g")
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>You have not posted anything yet.</p>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="Category" asp-action="MyPost">My Post</a>
+    </li>
+}
