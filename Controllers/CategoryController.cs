@@ -103,7 +103,7 @@ namespace ExchangeWebsite.Controllers
             ViewBag.Languages = new List<string> { "english", "spanish", "french", "german" };
             return View();
         }
-
+       
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreatePost([Bind("Title,Price,City,ZipCode,Description,Make,ModelNumber,Condition,CryptocurrencyAccepted,DeliveryAvailable,ContactEmail,PhoneNumber,ShowAddress,CategoryId,Language")] Post post, List<IFormFile> images)

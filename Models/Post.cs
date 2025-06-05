@@ -14,12 +14,12 @@ namespace ExchangeWebsite.Models
 
         [StringLength(1000)]
         public string? Description { get; set; }
-
+        [Required]
         [Column(TypeName = "decimal(18,2)")]
-        public decimal? Price { get; set; }
-
+        public required decimal? Price { get; set; }
+        [Required]
         [StringLength(100)]
-        public string? City { get; set; }
+        public string City { get; set; }
 
         [StringLength(20)]
         public string? ZipCode { get; set; }
@@ -29,23 +29,23 @@ namespace ExchangeWebsite.Models
 
         [StringLength(100)]
         public string? ModelNumber { get; set; }
-
+        [Required]
         [StringLength(50)]
-        public string? Condition { get; set; }
+        public string Condition { get; set; }
 
         public bool CryptocurrencyAccepted { get; set; }
         public bool DeliveryAvailable { get; set; }
-
+        [Required]
         [StringLength(100)]
-        public string? ContactEmail { get; set; }
-
+        public string ContactEmail { get; set; }
+        [Required]
         [StringLength(20)]
-        public string? PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
 
         public bool ShowAddress { get; set; }
-
+        [Required]
         [StringLength(20)]
-        public string? Language { get; set; }
+        public string Language { get; set; }
 
         public DateTime PostedAt { get; set; } = DateTime.UtcNow;
 

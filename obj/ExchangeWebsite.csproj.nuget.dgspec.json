@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj": {}
+    "F:\\ExchangeWebsite\\ExchangeWebsite.csproj": {}
   },
   "projects": {
-    "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj": {
+    "F:\\ExchangeWebsite\\ExchangeWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
+        "projectUniqueName": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
         "projectName": "ExchangeWebsite",
-        "projectPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
+        "projectPath": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
         "packagesPath": "C:\\Users\\duyba\\.nuget\\packages\\",
-        "outputPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\obj\\",
+        "outputPath": "F:\\ExchangeWebsite\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\VS2022SDK\\NuGetPackages"
