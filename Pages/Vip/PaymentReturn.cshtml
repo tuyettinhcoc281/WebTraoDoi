@@ -1,0 +1,14 @@
+﻿@page
+@model PaymentReturnModel
+
+<h2>VIP Payment Result</h2>
+@if (Request.Query["vnp_ResponseCode"] == "00")
+{
+    <div class="alert alert-success">Your VIP subscription was successful!</div>
+}
+else
+{
+    <div class="alert alert-danger">Payment failed or was cancelled.</div>
+}
+
+

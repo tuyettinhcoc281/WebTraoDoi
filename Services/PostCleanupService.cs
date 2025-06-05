@@ -24,7 +24,6 @@ public class PostCleanupService : BackgroundService
             using (var scope = _serviceProvider.CreateScope())
             {
                 var db = scope.ServiceProvider.GetRequiredService<ExchangeWebsiteContext>();
-                // For testing: delete posts older than 1 month
                 var cutoff = DateTime.UtcNow.AddMonths(-1);
                 var oldPosts = await db.Posts
                     .Include(p => p.PostImages)
@@ -33,7 +32,6 @@ public class PostCleanupService : BackgroundService
 
                 if (oldPosts.Any())
                 {
-                    // (delete images if needed)
                     db.Posts.RemoveRange(oldPosts);
                     await db.SaveChangesAsync(stoppingToken);
                 }

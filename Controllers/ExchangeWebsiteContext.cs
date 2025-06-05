@@ -20,24 +20,20 @@ public class ExchangeWebsiteContext : IdentityDbContext<IdentityUser>
     {
         base.OnModelCreating(builder);
 
-        // Configure ASP.NET Identity customizations
         builder.ApplyConfiguration(new ApplicationUserEntityConfiguration());
 
-        // Configure the self-referencing relationship for Categories
         builder.Entity<Category>()
             .HasOne(c => c.ParentCategory)
             .WithMany(c => c.SubCategories)
             .HasForeignKey(c => c.ParentCategoryId)
             .OnDelete(DeleteBehavior.Restrict);
 
-        // Configure Post-Category relationship
         builder.Entity<Post>()
             .HasOne(p => p.Category)
             .WithMany()
             .HasForeignKey(p => p.CategoryId)
             .OnDelete(DeleteBehavior.SetNull);
 
-        // Configure Post-PostImage relationship
         builder.Entity<PostImage>()
             .HasOne(pi => pi.Post)
             .WithMany(p => p.PostImages)

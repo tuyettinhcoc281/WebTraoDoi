@@ -1,13 +1,30 @@
 ﻿@using Microsoft.AspNetCore.Identity
 
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<ExchangeWebsite.Models.User> SignInManager
+@inject UserManager<ExchangeWebsite.Models.User> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
-        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">
+            Hello @UserManager.GetUserName(User)!
+        </a>
+        @{
+            ExchangeWebsite.Models.User? appUser = null;
+            if (User.Identity != null && User.Identity.IsAuthenticated && UserManager != null)
+            {
+                appUser = await UserManager.GetUserAsync(User);
+            }
+        }
+        @if (appUser != null && appUser.IsVip == true && appUser.VipExpiration > DateTime.UtcNow)
+        {
+            <span class="badge bg-warning text-dark ms-2">VIP</span>
+        }
+        else if (appUser != null)
+        {
+            <a href="/Vip/Buy" class="btn btn-warning btn-sm ms-2" style="vertical-align:middle;">Subscribe VIP</a>
+        }
     </li>
     <li class="nav-item">
         <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">

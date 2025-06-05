@@ -9,9 +9,9 @@ namespace ExchangeWebsite.Controllers
     public class CategoryController : Controller
     {
         private readonly ExchangeWebsiteContext _context;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<User> _userManager;
 
-        public CategoryController(ExchangeWebsiteContext context, UserManager<IdentityUser> userManager)
+        public CategoryController(ExchangeWebsiteContext context, UserManager<User> userManager)
         {
             _context = context ?? throw new ArgumentNullException(nameof(context));
             _userManager = userManager ?? throw new ArgumentNullException(nameof(userManager));
@@ -26,7 +26,6 @@ namespace ExchangeWebsite.Controllers
             if (category == null)
                 return NotFound();
 
-            // Get posts for this sub-category
             var posts = _context.Posts
                 .Where(p => p.CategoryId == id)
                 .Include(p => p.PostImages)
@@ -60,18 +59,15 @@ namespace ExchangeWebsite.Controllers
             if (category == null)
                 return NotFound();
 
-            // Start with posts in this category
             var postsQuery = _context.Posts
                 .Include(p => p.PostImages)
                 .Where(p => p.CategoryId == id);
 
-            // If a sub-category is selected, filter to it only
             if (subCategoryId.HasValue)
             {
                 postsQuery = postsQuery.Where(p => p.CategoryId == subCategoryId.Value);
             }
 
-            // Search filter
             if (!string.IsNullOrWhiteSpace(q))
             {
                 postsQuery = postsQuery.Where(p =>
@@ -80,7 +76,6 @@ namespace ExchangeWebsite.Controllers
                 );
             }
 
-            // Sorting
             postsQuery = sort switch
             {
                 "date_asc" => postsQuery.OrderBy(p => p.PostedAt),
@@ -98,7 +93,6 @@ namespace ExchangeWebsite.Controllers
         [HttpGet]
         public IActionResult CreatePost()
         {
-            // Only sub-categories (categories with a parent)
             var subCategories = _context.Categories
                 .Where(c => c.ParentCategoryId != null)
                 .OrderBy(c => c.CategoryName)
@@ -119,9 +113,32 @@ namespace ExchangeWebsite.Controllers
             {
                 post.UserId = userId;
             }
+
+            // --- VIP post limit logic ---
+            var user = await _userManager.FindByIdAsync(userId);
+            if (user != null && (!user.IsVip || (user.VipExpiration != null && user.VipExpiration <= DateTime.UtcNow)))
+            {
+                var today = DateTime.UtcNow.Date;
+                var userPostCount = _context.Posts.Count(p =>
+                    p.UserId == userId &&
+                    p.PostedAt >= today && p.PostedAt < today.AddDays(1));
+                if (userPostCount >= 3)
+                {
+                    ModelState.AddModelError("", "You have reached the maximum of 3 posts. Please subscribe to VIP for unlimited posts.");
+                    ViewBag.ShowVipModal = true; 
+                    ViewBag.Categories = _context.Categories
+                        .Where(c => c.ParentCategoryId != null)
+                        .OrderBy(c => c.CategoryName)
+                        .ToList();
+                    ViewBag.Conditions = new List<string> { "New", "Like New", "Good", "Fair", "Salvage" };
+                    ViewBag.Languages = new List<string> { "english", "spanish", "french", "german" };
+                    return View(post);
+                }
+            }
+            // --- End VIP post limit logic ---
+
             post.PostedAt = DateTime.UtcNow;
 
-            // Only sub-categories (categories with a parent)
             ViewBag.Categories = _context.Categories
                 .Where(c => c.ParentCategoryId != null)
                 .OrderBy(c => c.CategoryName)
@@ -207,7 +224,62 @@ namespace ExchangeWebsite.Controllers
             var posts = postsQuery.OrderByDescending(p => p.PostedAt).ToList();
             ViewBag.Posts = posts;
             ViewBag.SearchQuery = q;
-            return View("SearchResults"); // Create a SearchResults.cshtml view to display results
+            return View("SearchResults"); 
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> DeletePost(int id)
+        {
+            var post = await _context.Posts
+                .Include(p => p.PostImages)
+                .FirstOrDefaultAsync(p => p.PostId == id);
+
+            if (post == null)
+                return NotFound();
+
+            // Optional: Only allow the owner or admin to delete
+            var userId = _userManager.GetUserId(User);
+            if (post.UserId != userId && !User.IsInRole("Admin"))
+                return Forbid();
+
+            return View(post); 
+        }
+
+        [HttpPost, ActionName("DeletePost")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeletePostConfirmed(int id)
+        {
+            var post = await _context.Posts
+                .Include(p => p.PostImages)
+                .FirstOrDefaultAsync(p => p.PostId == id);
+
+            if (post == null)
+                return NotFound();
+
+            // Optional: Only allow the owner or admin to delete
+            var userId = _userManager.GetUserId(User);
+            if (post.UserId != userId && !User.IsInRole("Admin"))
+                return Forbid();
+
+            // Delete images from disk
+            if (post.PostImages != null)
+            {
+                foreach (var image in post.PostImages)
+                {
+                    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", image.ImagePath.TrimStart('/').Replace('/', Path.DirectorySeparatorChar));
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                    _context.PostImages.Remove(image);
+                }
+            }
+
+            _context.Posts.Remove(post);
+            await _context.SaveChangesAsync();
+
+            TempData["SuccessMessage"] = "Post deleted successfully!";
+            return RedirectToAction("MyPost");
         }
     }
 }

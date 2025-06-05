@@ -145,3 +145,40 @@
         <button type="submit" class="btn btn-primary">Continue</button>
     }
 </div>
+
+@if (ViewBag.ShowVipModal == true)
+{
+    <div class="modal fade show" id="vipModal" tabindex="-1" aria-modal="true" style="display:block;" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title">Upgrade to VIP</h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <strong>You have reached the maximum of 3 posts for free users.</strong>
+                    </p>
+                    <ul>
+                        <li>Unlimited post creation</li>
+                        <li>Priority support</li>
+                        <li>VIP badge on your profile</li>
+                    </ul>
+                    <p>Subscribe to VIP to unlock unlimited posts and more benefits!</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="/Vip/Buy" class="btn btn-warning">Subscribe VIP</a>
+                    <a href="javascript:void(0);" class="btn btn-secondary" onclick="closeVipModal()">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop fade show"></div>
+    <script>
+        function closeVipModal() {
+            document.getElementById('vipModal').style.display = 'none';
+            document.querySelector('.modal-backdrop').remove();
+        }
+        // Optionally, prevent form resubmission on close
+        window.history.replaceState({}, document.title, window.location.pathname);
+    </script>
+}
