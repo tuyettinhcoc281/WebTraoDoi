@@ -8176,11 +8176,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
+      "projectUniqueName": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
       "projectName": "ExchangeWebsite",
-      "projectPath": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
+      "projectPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
       "packagesPath": "C:\\Users\\duyba\\.nuget\\packages\\",
-      "outputPath": "F:\\ExchangeWebsite\\obj\\",
+      "outputPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "F:\\VS2022SDK\\NuGetPackages"

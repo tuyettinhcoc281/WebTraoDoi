@@ -89,7 +89,7 @@ namespace ExchangeWebsite.Controllers
             ViewBag.Posts = posts;
             return View(category);
         }
-
+        [Authorize]
         [HttpGet]
         public IActionResult CreatePost()
         {
