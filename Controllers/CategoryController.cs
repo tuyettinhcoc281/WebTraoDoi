@@ -51,7 +51,7 @@ namespace ExchangeWebsite.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(int id, int? subCategoryId, string sort)
+        public IActionResult Index(int id, int? subCategoryId, string sort, string q)
         {
             var category = _context.Categories
                 .Include(c => c.SubCategories)
@@ -71,6 +71,15 @@ namespace ExchangeWebsite.Controllers
                 postsQuery = postsQuery.Where(p => p.CategoryId == subCategoryId.Value);
             }
 
+            // Search filter
+            if (!string.IsNullOrWhiteSpace(q))
+            {
+                postsQuery = postsQuery.Where(p =>
+                    p.Title.Contains(q) ||
+                    (p.Description != null && p.Description.Contains(q))
+                );
+            }
+
             // Sorting
             postsQuery = sort switch
             {
@@ -85,7 +94,7 @@ namespace ExchangeWebsite.Controllers
             ViewBag.Posts = posts;
             return View(category);
         }
-        
+
         [HttpGet]
         public IActionResult CreatePost()
         {
@@ -125,7 +134,6 @@ namespace ExchangeWebsite.Controllers
                 var errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
                 if (errors.Count > 0)
                 {
-                    // For debugging: set a breakpoint here or log the errors
                     ViewBag.Errors = errors;
                 }
                 return View(post);
@@ -179,5 +187,28 @@ namespace ExchangeWebsite.Controllers
             ViewBag.Posts = posts;
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Search(string q)
+        {
+            var postsQuery = _context.Posts
+                .Include(p => p.PostImages)
+                .Include(p => p.Category)
+                .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(q))
+            {
+                postsQuery = postsQuery.Where(p =>
+                    p.Title.Contains(q) ||
+                    (p.Description != null && p.Description.Contains(q))
+                );
+            }
+
+            var posts = postsQuery.OrderByDescending(p => p.PostedAt).ToList();
+            ViewBag.Posts = posts;
+            ViewBag.SearchQuery = q;
+            return View("SearchResults"); // Create a SearchResults.cshtml view to display results
+        }
     }
 }
+

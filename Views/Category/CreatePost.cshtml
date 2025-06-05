@@ -4,107 +4,144 @@
     var categories = ViewBag.Categories as List<ExchangeWebsite.Models.Category>;
     var conditions = ViewBag.Conditions as List<string>;
     var languages = ViewBag.Languages as List<string>;
-  
 }
 
-<h2>Create Post</h2>
-
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
-}
-@if (ViewBag.Errors != null)
-{
-    <ul>
-    @foreach (var error in ViewBag.Errors)
-    {
-        <li>@error</li>
+<style>
+    body { background: linear-gradient(135deg, #f4f8ff 0%, #eaf1fb 100%); }
+    .create-post-card {
+        background: #f4f8ff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(56,103,246,0.07);
+        margin: 48px auto 32px auto;
+        max-width: 700px;
+        padding: 36px 32px 32px 32px;
+        animation: fadeInUp 1.2s;
     }
-    </ul>
-}
+    .create-title {
+        font-size: 2rem;
+        font-weight: 800;
+        color: #3867f6;
+        margin-bottom: 18px;
+        text-align: center;
+    }
+    .form-label {
+        font-weight: 600;
+        color: #3867f6;
+    }
+    .form-control, .form-select {
+        border-radius: 10px;
+        border: 1.5px solid #b3d0ff;
+        margin-bottom: 18px;
+        font-size: 1.08rem;
+        padding: 10px 14px;
+        transition: border 0.18s;
+    }
+    .form-control:focus, .form-select:focus {
+        border: 1.5px solid #3867f6;
+        box-shadow: 0 2px 8px rgba(56,103,246,0.08);
+    }
+    .btn-primary {
+        background: linear-gradient(90deg, #3867f6 60%, #5f8fff 100%);
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        padding: 12px 0;
+        width: 100%;
+        margin-top: 10px;
+        box-shadow: 0 4px 18px rgba(56,103,246,0.08);
+        transition: background 0.18s, box-shadow 0.18s;
+    }
+    .btn-primary:hover {
+        background: #3867f6;
+        box-shadow: 0 8px 32px rgba(56,103,246,0.16);
+    }
+    .alert { margin-bottom: 18px; }
+    @@keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px);}
+        to { opacity: 1; transform: translateY(0);}
+    }
+</style>
 
-@using (Html.BeginForm("CreatePost", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
-{
-    @Html.AntiForgeryToken()
+<div class="create-post-card">
+    <div class="create-title">Create Post</div>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+    @if (ViewBag.Errors != null)
+    {
+        <ul>
+        @foreach (var error in ViewBag.Errors)
+        {
+            <li class="text-danger">@error</li>
+        }
+        </ul>
+    }
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
-    <div>
-        <label>posting title</label>
+    @using (Html.BeginForm("CreatePost", "Category", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.AntiForgeryToken()
+        <label class="form-label">Title</label>
         @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
-    </div>
-    <div>
-        <label>price</label>
+
+        <label class="form-label">Price</label>
         @Html.TextBoxFor(m => m.Price, new { @class = "form-control", type = "number", step = "0.01" })
-        <label>city or neighborhood</label>
+
+        <label class="form-label">City or Neighborhood</label>
         @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
-        <label>ZIP code</label>
+
+        <label class="form-label">ZIP Code</label>
         @Html.TextBoxFor(m => m.ZipCode, new { @class = "form-control" })
-    </div>
-    <div>
-        <label>description</label>
-        @Html.TextAreaFor(m => m.Description, 8, 80, new { @class = "form-control" })
-    </div>
-    <fieldset>
-        <legend>posting details</legend>
-        <label>make / manufacturer</label>
+
+        <label class="form-label">Description</label>
+        @Html.TextAreaFor(m => m.Description, 6, 80, new { @class = "form-control" })
+
+        <label class="form-label">Make / Manufacturer</label>
         @Html.TextBoxFor(m => m.Make, new { @class = "form-control" })
-        <label>model name / number</label>
+
+        <label class="form-label">Model Name / Number</label>
         @Html.TextBoxFor(m => m.ModelNumber, new { @class = "form-control" })
-        <label>condition</label>
-        @Html.DropDownListFor(m => m.Condition, new SelectList(conditions), "--", new { @class = "form-control" })
-        <label>language of posting</label>
-        @Html.DropDownList("Language", new SelectList(languages), "english", new { @class = "form-control" })
-        <div>
-            @Html.CheckBoxFor(m => m.CryptocurrencyAccepted) cryptocurrency ok
-            @Html.CheckBoxFor(m => m.DeliveryAvailable) delivery available
+
+        <label class="form-label">Condition</label>
+        @Html.DropDownListFor(m => m.Condition, new SelectList(conditions), "--", new { @class = "form-select" })
+
+        <label class="form-label">Language of Posting</label>
+        @Html.DropDownList("Language", new SelectList(languages), "english", new { @class = "form-select" })
+
+        <div class="mb-2">
+            @Html.CheckBoxFor(m => m.CryptocurrencyAccepted) <span class="form-label" style="font-weight:400;">Cryptocurrency ok</span>
+            @Html.CheckBoxFor(m => m.DeliveryAvailable) <span class="form-label" style="font-weight:400;">Delivery available</span>
         </div>
-        <div>
-            @Html.DropDownListFor(
-                m => m.CategoryId,
-                new SelectList(categories, "CategoryId", "CategoryName"),
-                "-- select sub-category --",
-                new { @class = "form-control" }
-            )
-        </div>
-    </fieldset>
-    <fieldset>
-        <legend>reply options</legend>
-        <label>email</label>
+
+        <label class="form-label">Sub-Category</label>
+        @Html.DropDownListFor(
+            m => m.CategoryId,
+            new SelectList(categories, "CategoryId", "CategoryName"),
+            "-- select sub-category --",
+            new { @class = "form-select", required = "required" }
+        )
+        @Html.ValidationMessageFor(m => m.CategoryId, "", new { @class = "text-danger" })
+
+        <label class="form-label">Contact Email</label>
         @Html.TextBoxFor(m => m.ContactEmail, new { @class = "form-control", type = "email" })
-        <div>
-            @Html.CheckBox("ShowEmail", true) CL mail relay
-            <br />
-            @Html.CheckBox("CLChat", false) CL chat (new)
-            <br />
 
+        <label class="form-label">Phone Number</label>
+        @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "phone number" })
 
-        @Html.CheckBox("PublishPhoneNumber", false) publish phone number
-            @Html.TextBoxFor(m => m.PhoneNumber, new { @class = "form-control", placeholder = "phone number" })
+        <div class="mb-2">
+            @Html.CheckBoxFor(m => m.ShowAddress) <span class="form-label" style="font-weight:400;">Show address</span>
         </div>
-    </fieldset>
-    <fieldset>
-        <legend>location info</legend>
-        @Html.CheckBoxFor(m => m.ShowAddress) show address
-        <div>
-            <label>street</label>
-            <input type="text" name="Street" class="form-control" />
-            <label>cross street</label>
-            <input type="text" name="CrossStreet" class="form-control" />
-            <label>city</label>
-            @Html.TextBoxFor(m => m.City, new { @class = "form-control" })
-        </div>
-    </fieldset>
-    <div>
-        <label>Post Images</label>
+
+        <label class="form-label">Post Images</label>
         <input type="file" name="images" multiple class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">continue</button>
-}
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+        <button type="submit" class="btn btn-primary">Continue</button>
+    }
+</div>

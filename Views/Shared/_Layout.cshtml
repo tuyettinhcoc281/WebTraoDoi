@@ -14,12 +14,54 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ExchangeWebsite.styles.css" asp-append-version="true" />
+
+    <!-- Inline Styles for Header and Footer -->
+    <style>
+        /* Header Styling */
+        header .navbar {
+            background-color: #f0f5ff; /* Match the light blue background */
+            border: none; /* Remove the default border */
+            border-radius: 10px; /* Rounded corners */
+            margin: 10px 0; /* Add some spacing */
+            padding: 15px 20px; /* More padding for a spacious look */
+        }
+
+        header .navbar-brand {
+            color: #0056b3; /* Darker blue for the brand to match the main body text */
+            font-weight: bold;
+        }
+
+        header .nav-link {
+            color: #666; /* Softer color for nav links */
+        }
+
+        header .nav-link:hover {
+            color: #0056b3; /* Hover effect to match the theme */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #f0f5ff; /* Match the light blue background */
+            border-top: none; /* Remove the default border */
+            border-radius: 10px 10px 0 0; /* Rounded top corners */
+            margin-top: 20px; /* Spacing above footer */
+            padding: 20px 0; /* More padding */
+        }
+
+        footer a {
+            color: #0056b3; /* Match the link color to the theme */
+        }
+
+        footer a:hover {
+            color: #003d82; /* Slightly darker on hover */
+        }
+    </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
 
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" asp-area="" asp-controller="Home" asp-action="Index">ExchangeWebsite</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -37,6 +79,12 @@
                         </li>
                     </ul>
 
+                    <!-- Search Bar -->
+                    <form class="d-flex me-3" method="get" asp-controller="Category" asp-action="Search">
+                        <input class="form-control me-2" type="search" name="q" placeholder="Search posts..." aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
                     <!-- User Info / Login Partial -->
                     <partial name="_LoginPartial" />
                 </div>
@@ -52,9 +100,19 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 border-top bg-light text-muted">
+    <footer class="footer mt-auto py-3 text-muted">
         <div class="container text-center">
-            &copy; 2025 - ExchangeWebsite - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-2 mb-md-0">
+                    © 2025 - ExchangeWebsite
+                </div>
+                <div class="col-md-6">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="mx-2">Home</a>
+                    <a asp-area="" asp-controller="Home" asp-action="About" class="mx-2">About Us</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Contact" class="mx-2">Contact</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy" class="mx-2">Privacy</a>
+                </div>
+            </div>
         </div>
     </footer>
 

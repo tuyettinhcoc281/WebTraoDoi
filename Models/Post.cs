@@ -50,9 +50,10 @@ namespace ExchangeWebsite.Models
         public DateTime PostedAt { get; set; } = DateTime.UtcNow;
 
         // Foreign key
+        [Required]
         public int? CategoryId { get; set; }
         public virtual Category? Category { get; set; }
-
+       
         public virtual ICollection<PostImage> PostImages { get; set; } = new List<PostImage>();
 
         // Foreign key

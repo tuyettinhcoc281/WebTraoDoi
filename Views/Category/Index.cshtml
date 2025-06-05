@@ -1,74 +1,257 @@
-﻿@model ExchangeWebsite.Models.Category  
-@{  
-    ViewData["Title"] = Model.CategoryName;  
-    var posts = ViewBag.Posts as List<ExchangeWebsite.Models.Post>;  
-    var query = Context.Request.Query; // Fix: Use Context.Request.Query to access query parameters  
-}  
-
-<h1>@Model.CategoryName</h1>  
-
-<form method="get" asp-action="Index" asp-controller="Category" class="mb-4">  
-    <input type="hidden" name="id" value="@Model.CategoryId" />  
-    <div class="row g-2 align-items-end">  
-        <div class="col-md-4">  
-            <label for="subCategoryId" class="form-label">Sub-Category</label>  
-            <select id="subCategoryId" name="subCategoryId" class="form-select">  
-                <option value="">All Sub-Categories</option>  
-                @foreach (var sub in Model.SubCategories)  
-                {  
-                    <option value="@sub.CategoryId" selected="@(query["subCategoryId"] == sub.CategoryId.ToString())">@sub.CategoryName</option>  
-                }  
-            </select>  
-        </div>  
-        <div class="col-md-4">  
-            <label for="sort" class="form-label">Sort By</label>  
-            <select id="sort" name="sort" class="form-select">  
-                <option value="">Sort By</option>  
-                @foreach (var sortOption in new[] { "date_desc", "date_asc", "price_asc", "price_desc" })  
-                {  
-                    <option value="@sortOption" selected="@(query["sort"] == sortOption)">  
-                        @(sortOption == "date_desc" ? "Newest" : sortOption == "date_asc" ? "Oldest" : sortOption == "price_asc" ? "Price: Low to High" : "Price: High to Low")  
-                    </option>  
-                }  
-            </select>  
-        </div>  
-        <div class="col-md-4">  
-            <button type="submit" class="btn btn-primary w-100">Filter</button>  
-        </div>  
-    </div>  
-</form>  
-
-<ul>  
-    @foreach (var sub in Model.SubCategories.OrderBy(s => s.DisplayOrder))  
-    {  
-        <li>@sub.CategoryName</li>  
-    }  
-</ul>  
-
-@if (posts != null && posts.Any())  
-{  
-    <div class="row">  
-        @foreach (var post in posts)  
-        {  
-            <div class="col-md-4 mb-4">  
-                <div class="card h-100">  
-                    <a href="@Url.Action("Post", "Category", new { id = post.PostId })" style="text-decoration:none;color:inherit;">  
-                        @if (post.PostImages != null && post.PostImages.Any())  
-                        {  
-                            <img src="@post.PostImages.First().ImagePath" class="card-img-top" style="height:200px;object-fit:cover;" />  
-                        }  
-                        <div class="card-body">  
-                            <h5 class="card-title">@post.Title</h5>  
-                            <p class="card-text text-success"><strong>@(post.Price.HasValue ? post.Price.Value.ToString("C0") : "")</strong></p>  
-                            <p class="card-text">@post.Description</p>  
-                            <p class="card-text"><small class="text-muted">@post.City, @post.ZipCode</small></p>  
-                            <div class="text-muted" style="font-size:small;">  
-                                Posted @post.PostedAt.ToLocalTime().ToString("g")  
-                            </div>  
-                        </div>  
-                    </a>  
-                </div>  
-            </div>  
-        }  
-    </div>  
+﻿@model ExchangeWebsite.Models.Category
+@{
+    ViewData["Title"] = Model.CategoryName;
+    var posts = ViewBag.Posts as List<ExchangeWebsite.Models.Post>;
 }
+
+<style>
+    body {
+        background: linear-gradient(135deg, #f4f8ff 0%, #eaf1fb 100%);
+    }
+
+    .category-header {
+        text-align: center;
+        margin-top: 48px;
+        margin-bottom: 12px;
+        animation: fadeInDown 1s;
+    }
+
+        .category-header h1 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            color: #3867f6;
+            margin-bottom: 10px;
+        }
+
+        .category-header p {
+            font-size: 1.15rem;
+            color: #555;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+    .subcategory-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin: 0 auto 32px auto;
+        padding: 0;
+        list-style: none;
+        justify-content: center;
+        animation: fadeInUp 1.2s;
+    }
+
+    .subcategory-link {
+        display: inline-block;
+        background: #fff;
+        color: #3867f6;
+        font-size: 1.05rem;
+        font-weight: 600;
+        padding: 12px 28px;
+        border-radius: 12px;
+        border: 1.5px solid #b3d0ff;
+        text-decoration: none;
+        box-shadow: 0 2px 12px rgba(56,103,246,0.04);
+        transition: background 0.18s, color 0.18s, box-shadow 0.18s, border 0.18s, transform 0.18s;
+        margin-bottom: 8px;
+    }
+
+        .subcategory-link:hover, .subcategory-link:focus {
+            background: #3867f6;
+            color: #fff;
+            border: 1.5px solid #3867f6;
+            box-shadow: 0 6px 24px rgba(56,103,246,0.13);
+            transform: translateY(-2px) scale(1.04);
+        }
+
+    .posts-section {
+        background: #f4f8ff;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px rgba(56,103,246,0.07);
+        margin: 32px auto 32px auto;
+        max-width: 1100px;
+        padding: 28px 18px 24px 18px;
+        animation: fadeInUp 1.2s;
+    }
+
+    .posts-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 10px;
+    }
+
+    .post-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(56,103,246,0.06);
+        padding: 12px 12px 10px 12px;
+        transition: box-shadow 0.18s, transform 0.18s;
+        display: flex;
+        flex-direction: column;
+        min-height: 180px;
+        animation: fadeInUp 0.7s;
+        position: relative;
+    }
+
+        .post-card:hover {
+            box-shadow: 0 6px 18px rgba(56,103,246,0.13);
+            transform: translateY(-2px) scale(1.03);
+        }
+
+    .post-img {
+        width: 100%;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 8px;
+        background: #eaf1fb;
+    }
+
+    .post-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #3867f6;
+        margin-bottom: 4px;
+        line-height: 1.2;
+    }
+
+    .post-desc {
+        color: #444;
+        font-size: 0.97rem;
+        margin-bottom: 6px;
+        flex: 1;
+        line-height: 1.3;
+    }
+
+    .post-meta {
+        font-size: 0.92rem;
+        color: #888;
+        margin-bottom: 4px;
+    }
+
+    .view-btn {
+        background: #3867f6;
+        color: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 6px 14px;
+        font-weight: 600;
+        font-size: 0.98rem;
+        text-decoration: none;
+        transition: background 0.18s, box-shadow 0.18s;
+        box-shadow: 0 1px 4px rgba(56,103,246,0.08);
+        margin-right: 6px;
+    }
+
+        .view-btn:hover {
+            background: #274bb5;
+            color: #fff;
+        }
+    @@keyframes fadeInDown {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+    @@keyframes fadeInUp {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+    @@media (max-width: 1100px) {
+        .posts-section
+
+    {
+        max-width: 98vw;
+    }
+
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    }
+    @@media (max-width: 700px) {
+        .posts-grid
+
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .posts-section {
+        padding: 10px 2vw;
+    }
+
+    }
+</style>
+
+<div class="category-header">
+    <h1>@Model.CategoryName</h1>
+    <p>Browse subcategories and discover posts in <b>@Model.CategoryName</b></p>
+    @if (Model.SubCategories != null && Model.SubCategories.Any())
+    {
+        <ul class="subcategory-list">
+            @foreach (var sub in Model.SubCategories.OrderBy(sc => sc.DisplayOrder))
+            {
+                <li>
+                    <a class="subcategory-link" href="@Url.Action("Index", "Category", new { id = sub.CategoryId })">
+                        @sub.CategoryName
+                    </a>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+<div class="posts-section">
+    <h2 style="color:#3867f6;font-weight:700;font-size:1.2rem;margin-bottom:14px;">Posts</h2>
+    @if (posts == null || !posts.Any())
+    {
+        <div class="alert alert-info">No posts found in this category.</div>
+    }
+    else
+    {
+        <div class="posts-grid">
+            @foreach (var post in posts)
+            {
+                <div class="post-card">
+                    <a href="@Url.Action("Post", "Category", new { id = post.PostId })" style="text-decoration:none;color:inherit;">
+                        @if (post.PostImages != null && post.PostImages.Any())
+                        {
+                            <img src="@post.PostImages.First().ImagePath" class="post-img" alt="Post Image" />
+                        }
+                        <div class="post-title">@post.Title</div>
+                        <div class="post-desc">@post.Description</div>
+                        <div class="post-meta">
+                            <span>@(post.Price.HasValue? post.Price.Value.ToString("C0") : "")</span>
+                            <span> | @post.City, @post.ZipCode</span>
+                        </div>
+                        <div class="post-meta" style="font-size:small;">
+                            Posted @post.PostedAt.ToLocalTime().ToString("g")
+                        </div>
+                    </a>
+                    <div class="mt-2 d-flex">
+                        <a href="@Url.Action("Post", "Category", new { id = post.PostId })" class="view-btn">View</a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
