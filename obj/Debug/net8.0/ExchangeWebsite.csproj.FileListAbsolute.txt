@@ -282,10 +282,10 @@ F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.build.json
 F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.build.json.cache
 F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.development.json
 F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 F:\ExchangeWebsite\obj\Debug\net8.0\Exchange.9ACB447D.Up2Date
 F:\ExchangeWebsite\obj\Debug\net8.0\ExchangeWebsite.dll
 F:\ExchangeWebsite\obj\Debug\net8.0\refint\ExchangeWebsite.dll
 F:\ExchangeWebsite\obj\Debug\net8.0\ExchangeWebsite.pdb
 F:\ExchangeWebsite\obj\Debug\net8.0\ExchangeWebsite.genruntimeconfig.cache
 F:\ExchangeWebsite\obj\Debug\net8.0\ref\ExchangeWebsite.dll
+F:\ExchangeWebsite\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

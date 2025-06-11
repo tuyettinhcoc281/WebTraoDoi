@@ -1,4 +1,6 @@
 @model ExchangeWebsite.Models.Post
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ExchangeWebsite.Models.User> UserManager
 
 @{
     ViewData["Title"] = Model.Title;
@@ -114,3 +116,4 @@
         </form>
     }
 </div>
+

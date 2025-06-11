@@ -20,10 +20,10 @@ namespace ExchangeWebsite.Controllers
                 .ToList();
 
             var vipPostsQuery = _context.Posts
-                .Include(p => p.PostImages)
-                .Include(p => p.User)
-                .Where(p => p.User != null && p.User.IsVip && (p.User.VipExpiration == null || p.User.VipExpiration > DateTime.UtcNow))
-                .OrderByDescending(p => p.PostedAt);
+                 .Include(p => p.PostImages)
+                 .Include(p => p.User)
+                 .Where(p => p.User != null && p.User.IsVip && (p.User.VipExpiration == null || p.User.VipExpiration > DateTime.UtcNow))
+                 .OrderByDescending(p => p.PostedAt);
 
             var totalVipPosts = vipPostsQuery.Count();
             var featuredVipPosts = vipPostsQuery

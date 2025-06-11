@@ -24,6 +24,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\Identity\Data\" />
+    <Folder Include="Pages\Account\" />
     <Folder Include="wwwroot\uploads\posts\" />
   </ItemGroup>
 
