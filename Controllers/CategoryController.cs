@@ -264,7 +264,7 @@ namespace ExchangeWebsite.Controllers
             if (post.UserId != userId && !User.IsInRole("Admin"))
                 return Forbid();
 
-            // Delete images from disk
+            // Delete images from disk/Vip/Buy
             if (post.PostImages != null)
             {
                 foreach (var image in post.PostImages)

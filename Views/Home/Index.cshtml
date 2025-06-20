@@ -183,7 +183,7 @@
 {
     <div class="category-card">
         <div class="category-title" style="color:#f7b731;">
-            <span style="font-size:1.5rem;">&#11088;</span> Featured VIP Posts
+            <span style="font-size:1.5rem;">&#11088;</span> Hot Posts
         </div>
         <div class="posts-grid" style="display: flex; gap: 18px; flex-wrap: wrap;">
             @foreach (var post in (List<ExchangeWebsite.Models.Post>)ViewBag.TopVipPosts)
@@ -218,7 +218,7 @@
 {
     <div class="category-card">
         <div class="category-title" style="color:#f7b731;">
-            <span style="font-size:1.5rem;">&#11088;</span> Featured VIP Posts
+            <span style="font-size:1.5rem;">&#11088;</span> Hot Posts 
         </div>
         <div class="posts-grid" style="display: flex; gap: 18px; flex-wrap: wrap;">
             @foreach (var post in (List<ExchangeWebsite.Models.Post>)ViewBag.FeaturedVipPosts)
@@ -258,7 +258,7 @@
                         <a class="page-link" href="@Url.Action("Index", "Home", new { vipPage = i })">@i</a>
                     </li>
                 }
-            </ul>
+            }
         </nav>
     </div>
 }

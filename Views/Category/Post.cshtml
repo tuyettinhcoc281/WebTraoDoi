@@ -1,11 +1,8 @@
 @model ExchangeWebsite.Models.Post
-<<<<<<< Updated upstream
-=======
 @using Microsoft.AspNetCore.Identity
 @inject UserManager<ExchangeWebsite.Models.User> UserManager
 @inject SignInManager<ExchangeWebsite.Models.User> SignInManager
 @using ExchangeWebsite.Models
->>>>>>> Stashed changes
 
 @{
     ViewData["Title"] = Model.Title;
@@ -183,9 +180,6 @@
             <button type="submit" class="delete-btn">Delete Post</button>
         </form>
     }
-<<<<<<< Updated upstream
-</div>
-=======
     @if (User.Identity.IsAuthenticated && Model.UserId != userId)
     {
         <button id="showReportBtn" class="btn btn-outline-danger ms-2" type="button" onclick="toggleReportForm()">Report</button>
@@ -335,4 +329,3 @@
         return UserManager.IsInRoleAsync(user, "Admin").Result;
     }
 }
->>>>>>> Stashed changes
