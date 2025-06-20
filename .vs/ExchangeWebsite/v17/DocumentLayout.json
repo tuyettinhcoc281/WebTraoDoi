@@ -1,181 +1,157 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\ExchangeWebsite\\",
+  "WorkspaceRootPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\createpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\pages\\vip\\paymentreturn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\pages\\vip\\paymentreturn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:pages\\vip\\paymentreturn.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\pages\\vip\\paymentreturn.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\pages\\vip\\paymentreturn.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:pages\\vip\\paymentreturn.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\pages\\vip\\buy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\pages\\vip\\buy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:pages\\vip\\buy.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250530174716_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250530174716_a.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\helpers\\adminonlyattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\helpers\\adminonlyattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:helpers\\adminonlyattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:services\\vnpayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\pages\\vip\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\pages\\vip\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:pages\\vip\\buy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250605032608_v10.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250605032608_v10.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250530172543_v0.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250530172543_v0.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\controllers\\exchangewebsitecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\controllers\\exchangewebsitecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:controllers\\exchangewebsitecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250530174716_a.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250530174716_a.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\exchangewebsitecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\exchangewebsitecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\services\\postcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\services\\postcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:services\\postcleanupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\mypost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\mypost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\mypost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\deletepost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\deletepost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\deletepost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250605032608_v10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250605032608_v10.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\models\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\models\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:models\\postimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\post.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\views\\category\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\views\\category\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:views\\category\\searchresults.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\duyba\\AppData\\Local\\Temp\\tmpE2FD.tmp.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\checkhust\\webtraodoi\\webtraodoi\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250530172519_v2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250530172344_v0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172328_d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250530172328_d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|f:\\exchangewebsite\\migrations\\20250530172543_v0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3F222D61-0E18-44C4-A8E0-F49929AAE4F2}|ExchangeWebsite.csproj|solutionrelative:migrations\\20250530172543_v0.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\ExchangeWebsite\\Migrations\\20250530172328_d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -185,7 +161,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -200,453 +176,421 @@
               "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAgwA4BAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:28:29.756Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreatePost.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\CreatePost.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\CreatePost.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\CreatePost.cshtml",
-              "RelativeToolTip": "Views\\Category\\CreatePost.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAqwKAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T17:34:43.192Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAtwHwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T14:57:13.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAApwB0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T02:42:39.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAKgAAAAAAAAAAAAiwMoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T17:50:04.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentReturn.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Pages\\Vip\\PaymentReturn.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Vip\\PaymentReturn.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Pages\\Vip\\PaymentReturn.cshtml.cs",
-              "RelativeToolTip": "Pages\\Vip\\PaymentReturn.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:29:45.571Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Post.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Models\\Post.cs",
-              "RelativeDocumentMoniker": "Models\\Post.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Models\\Post.cs",
-              "RelativeToolTip": "Models\\Post.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAIwC4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:58:05.443Z",
+              "Title": "Dockerfile",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-20T03:27:21.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAGYCAAAAAAAAAAAowHcCAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-06-20T03:06:17.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "PaymentReturn.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Pages\\Vip\\PaymentReturn.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Vip\\PaymentReturn.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Pages\\Vip\\PaymentReturn.cshtml",
-              "RelativeToolTip": "Pages\\Vip\\PaymentReturn.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAiwMoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T04:31:49.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Buy.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Pages\\Vip\\Buy.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Vip\\Buy.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Pages\\Vip\\Buy.cshtml.cs",
-              "RelativeToolTip": "Pages\\Vip\\Buy.cshtml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAlwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:29:42.618Z"
+              "WhenOpened": "2025-06-20T03:05:55.954Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "AdminOnlyAttribute.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Helpers\\AdminOnlyAttribute.cs",
-              "RelativeDocumentMoniker": "Helpers\\AdminOnlyAttribute.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Helpers\\AdminOnlyAttribute.cs",
-              "RelativeToolTip": "Helpers\\AdminOnlyAttribute.cs",
+              "Title": "PaymentReturn.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\PaymentReturn.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Vip\\PaymentReturn.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\PaymentReturn.cshtml.cs",
+              "RelativeToolTip": "Pages\\Vip\\PaymentReturn.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T04:12:30.533Z"
+              "WhenOpened": "2025-06-20T03:05:55.956Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VnPayService.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Services\\VnPayService.cs",
-              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Services\\VnPayService.cs",
-              "RelativeToolTip": "Services\\VnPayService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Post.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "Models\\Post.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\Post.cs",
+              "RelativeToolTip": "Models\\Post.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAvwCUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:29:36.174Z"
+              "WhenOpened": "2025-06-20T03:05:55.957Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAASwDIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAtwHwAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreatePost.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\CreatePost.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\CreatePost.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\CreatePost.cshtml",
+              "RelativeToolTip": "Views\\Category\\CreatePost.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAqwKAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-20T03:05:56.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAApwB0AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T02:41:40.67Z"
+              "WhenOpened": "2025-06-20T03:05:55.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAIBAAAAAAAAAAAgwA4BAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.911Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "20250530174716_a.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530174716_a.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530174716_a.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530174716_a.cs",
-              "RelativeToolTip": "Migrations\\20250530174716_a.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAcAAAAZAAAAAAAAAA==",
+              "Title": "PaymentReturn.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\PaymentReturn.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Vip\\PaymentReturn.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\PaymentReturn.cshtml",
+              "RelativeToolTip": "Pages\\Vip\\PaymentReturn.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Buy.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\Buy.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Vip\\Buy.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\Buy.cshtml.cs",
+              "RelativeToolTip": "Pages\\Vip\\Buy.cshtml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAlwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:47:16.52Z"
+              "WhenOpened": "2025-06-20T03:05:55.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AdminOnlyAttribute.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Helpers\\AdminOnlyAttribute.cs",
+              "RelativeDocumentMoniker": "Helpers\\AdminOnlyAttribute.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Helpers\\AdminOnlyAttribute.cs",
+              "RelativeToolTip": "Helpers\\AdminOnlyAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Buy.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Pages\\Vip\\Buy.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Vip\\Buy.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Pages\\Vip\\Buy.cshtml",
-              "RelativeToolTip": "Pages\\Vip\\Buy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T04:08:22.627Z"
+              "Title": "VnPayService.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Services\\VnPayService.cs",
+              "RelativeDocumentMoniker": "Services\\VnPayService.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Services\\VnPayService.cs",
+              "RelativeToolTip": "Services\\VnPayService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.962Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAASwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T02:42:08.12Z"
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAASwDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.963Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAWwLUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:52:56.078Z"
+              "Title": "Buy.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\Buy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Vip\\Buy.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Pages\\Vip\\Buy.cshtml",
+              "RelativeToolTip": "Pages\\Vip\\Buy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.966Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:56:05.733Z"
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAASwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.967Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "ResetPassword.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAnAAAAAAAAAA==",
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAWwLUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:59:10.287Z"
+              "WhenOpened": "2025-06-20T03:05:55.969Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "20250605032608_v10.Designer.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250605032608_v10.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250605032608_v10.Designer.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250605032608_v10.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250605032608_v10.Designer.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAASwNAAAABLAAAAAAAAAA==",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:59:03.726Z"
+              "WhenOpened": "2025-06-20T03:05:55.97Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "20250530172543_v0.Designer.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530172543_v0.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530172543_v0.Designer.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530172543_v0.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250530172543_v0.Designer.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAASwNEAAABLAAAAAAAAAA==",
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:58:58.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T03:52:45.326Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ExchangeWebsiteContextModelSnapshot.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\ExchangeWebsiteContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Migrations\\ExchangeWebsiteContextModelSnapshot.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\ExchangeWebsiteContextModelSnapshot.cs",
-              "RelativeToolTip": "Migrations\\ExchangeWebsiteContextModelSnapshot.cs",
-              "ViewState": "AgIAAL4BAAAAAAAAAAASwNUBAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:26:35.301Z"
+              "WhenOpened": "2025-06-20T03:05:55.971Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:56:41.29Z"
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.975Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "20250530174716_a.Designer.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530174716_a.Designer.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530174716_a.Designer.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530174716_a.Designer.cs",
-              "RelativeToolTip": "Migrations\\20250530174716_a.Designer.cs",
-              "ViewState": "AgIAALoBAAAAAAAAAAASwNEBAABIAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:06:52.148Z"
+              "WhenOpened": "2025-06-20T03:05:55.978Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
               "Title": "ExchangeWebsiteContext.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Controllers\\ExchangeWebsiteContext.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\ExchangeWebsiteContext.cs",
               "RelativeDocumentMoniker": "Controllers\\ExchangeWebsiteContext.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Controllers\\ExchangeWebsiteContext.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Controllers\\ExchangeWebsiteContext.cs",
               "RelativeToolTip": "Controllers\\ExchangeWebsiteContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:56:07.865Z"
+              "WhenOpened": "2025-06-20T03:05:55.98Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "Logout.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T03:52:43.967Z"
+              "WhenOpened": "2025-06-20T03:05:55.981Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAApwAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:51:14.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "DeletePost.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\DeletePost.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\DeletePost.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\DeletePost.cshtml",
-              "RelativeToolTip": "Views\\Category\\DeletePost.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-05T03:45:33.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "20250605032608_v10.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250605032608_v10.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250605032608_v10.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250605032608_v10.cs",
-              "RelativeToolTip": "Migrations\\20250605032608_v10.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADgvxIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T03:26:09.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "MyPost.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\MyPost.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\MyPost.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\MyPost.cshtml",
-              "RelativeToolTip": "Views\\Category\\MyPost.cshtml",
-              "ViewState": "AgIAAJIAAAAAAAAAAAASwJsAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T15:38:41.378Z"
+              "WhenOpened": "2025-06-20T03:05:55.984Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "DeletePost.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\DeletePost.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\DeletePost.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\DeletePost.cshtml",
+              "RelativeToolTip": "Views\\Category\\DeletePost.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MyPost.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\MyPost.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\MyPost.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\MyPost.cshtml",
+              "RelativeToolTip": "Views\\Category\\MyPost.cshtml",
+              "ViewState": "AgIAAJIAAAAAAAAAAAASwJsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "PostCleanupService.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Services\\PostCleanupService.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Services\\PostCleanupService.cs",
               "RelativeDocumentMoniker": "Services\\PostCleanupService.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Services\\PostCleanupService.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Services\\PostCleanupService.cs",
               "RelativeToolTip": "Services\\PostCleanupService.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T02:41:33.567Z"
+              "WhenOpened": "2025-06-20T03:05:55.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Category.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "PostImage.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\PostImage.cs",
+              "RelativeDocumentMoniker": "Models\\PostImage.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\PostImage.cs",
+              "RelativeToolTip": "Models\\PostImage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:05:55.993Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Category.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:32:33.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "PostImage.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Models\\PostImage.cs",
-              "RelativeDocumentMoniker": "Models\\PostImage.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Models\\PostImage.cs",
-              "RelativeToolTip": "Models\\PostImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:56:01.674Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAIkAAAAAAAAAAADwv5kAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.994Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:54:48.222Z"
+              "Title": "SearchResults.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\SearchResults.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\SearchResults.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\SearchResults.cshtml",
+              "RelativeToolTip": "Views\\Category\\SearchResults.cshtml",
+              "ViewState": "AgIAAKQAAAAAAAAAAADwv38AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Post.cshtml",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\Post.cshtml",
+              "RelativeDocumentMoniker": "Views\\Category\\Post.cshtml",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\Views\\Category\\Post.cshtml",
+              "RelativeToolTip": "Views\\Category\\Post.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwFEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T03:05:55.997Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 34,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Index.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\Index.cshtml",
-              "RelativeToolTip": "Views\\Category\\Index.cshtml",
-              "ViewState": "AgIAAIkAAAAAAAAAAADwv5kAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T14:43:18.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "SearchResults.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\SearchResults.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\SearchResults.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\SearchResults.cshtml",
-              "RelativeToolTip": "Views\\Category\\SearchResults.cshtml",
-              "ViewState": "AgIAAKQAAAAAAAAAAADwv38AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T15:12:57.067Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "Post.cshtml",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Views\\Category\\Post.cshtml",
-              "RelativeDocumentMoniker": "Views\\Category\\Post.cshtml",
-              "ToolTip": "F:\\ExchangeWebsite\\Views\\Category\\Post.cshtml",
-              "RelativeToolTip": "Views\\Category\\Post.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAYwFEAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T17:36:47.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
               "Title": "tmpE2FD.tmp.cshtml",
               "DocumentMoniker": "C:\\Users\\duyba\\AppData\\Local\\Temp\\tmpE2FD.tmp.cshtml",
               "ToolTip": "C:\\Users\\duyba\\AppData\\Local\\Temp\\tmpE2FD.tmp.cshtml",
@@ -656,72 +600,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "F:\\ExchangeWebsite\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-30T18:23:53.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 35,
               "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\ScaffoldingReadMe.txt",
+              "DocumentMoniker": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
-              "ToolTip": "F:\\ExchangeWebsite\\ScaffoldingReadMe.txt",
+              "ToolTip": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ScaffoldingReadMe.txt",
               "RelativeToolTip": "ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-05-31T02:42:45.445Z"
+              "WhenOpened": "2025-06-20T03:05:56.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "20250530172543_v0.cs",
-              "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530172543_v0.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530172543_v0.cs",
-              "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530172543_v0.cs",
-              "RelativeToolTip": "Migrations\\20250530172543_v0.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T17:25:43.138Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 36,
               "Title": "20250530172519_v2.cs",
               "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530172519_v2.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs",
               "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs",
-              "RelativeToolTip": "Migrations\\20250530172519_v2.cs",
+              "RelativeToolTip": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172519_v2.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T17:25:19.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 38,
               "Title": "20250530172328_d.cs",
               "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530172328_d.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530172328_d.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172328_d.cs",
               "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530172328_d.cs",
-              "RelativeToolTip": "Migrations\\20250530172328_d.cs",
+              "RelativeToolTip": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172328_d.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T17:23:28.488Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 37,
               "Title": "20250530172344_v0.cs",
               "DocumentMoniker": "F:\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250530172344_v0.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs",
               "ToolTip": "F:\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs",
-              "RelativeToolTip": "Migrations\\20250530172344_v0.cs",
+              "RelativeToolTip": "..\\..\\..\\ExchangeWebsite\\Migrations\\20250530172344_v0.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T17:23:44.796Z"

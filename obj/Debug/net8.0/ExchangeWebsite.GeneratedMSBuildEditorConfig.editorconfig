@@ -17,109 +17,149 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ExchangeWebsite
 build_property.RootNamespace = ExchangeWebsite
-build_property.ProjectDir = F:\ExchangeWebsite\
+build_property.ProjectDir = F:\CheckHUST\WebTraoDoi\WebTraoDoi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = F:\ExchangeWebsite
+build_property.MSBuildProjectDirectory = F:\CheckHUST\WebTraoDoi\WebTraoDoi
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/Account/Login.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/Account/Logout.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/Account/Register.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/_ViewImports.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Areas/Identity/Pages/_ViewStart.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Pages/Vip/Buy.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Pages/Vip/Buy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlwXEJ1eS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Pages/Vip/PaymentReturn.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Pages/Vip/PaymentReturn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlwXFBheW1lbnRSZXR1cm4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/CreatePost.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/PostDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUG9zdERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Posts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUG9zdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Reports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Revenue.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmV2ZW51ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/ShippingRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2hpcHBpbmdSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/CreatePost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ3JlYXRlUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/DeletePost.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/DeletePost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRGVsZXRlUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/Index.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/MyPost.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/MyPost.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTXlQb3N0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/Post.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/Post.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcUG9zdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Category/SearchResults.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Category/SearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcU2VhcmNoUmVzdWx0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Home/Index.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Home/Privacy.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Shared/Error.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Shared/_LoginPartial.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/_ViewImports.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/_ViewStart.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/ExchangeWebsite/Views/Shared/_Layout.cshtml]
+[F:/CheckHUST/WebTraoDoi/WebTraoDoi/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-2za2osn5j5

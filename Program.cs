@@ -17,6 +17,7 @@ builder.Services.AddDefaultIdentity<User>(options =>
         options.SignIn.RequireConfirmedAccount = false;
         // You can add more Identity options here if needed
     })
+    .AddRoles<IdentityRole>() // <-- This is required!
     .AddEntityFrameworkStores<ExchangeWebsiteContext>();
 
 // Add services to the container

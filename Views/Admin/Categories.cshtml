@@ -1,0 +1,43 @@
+@model IEnumerable<ExchangeWebsite.Models.Category>
+@{
+    ViewData["Title"] = "Categories";
+}
+<h2>Categories</h2>
+<a class="btn btn-primary" href="@Url.Action("CreateCategory")">Create New Category</a>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subcategories</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var cat in Model)
+    {
+        <tr>
+            <td>@cat.CategoryName</td>
+            <td>
+                @if (cat.SubCategories != null)
+                {
+                    foreach (var sub in cat.SubCategories)
+                    {
+                        <span class="badge bg-info text-dark">@sub.CategoryName</span>
+                        <form asp-action="DeleteCategory" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="@sub.CategoryId" />
+                            <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this subcategory?');">Delete</button>
+                        </form>
+                    }
+                }
+            </td>
+            <td>
+                <a class="btn btn-sm btn-primary" href="@Url.Action("EditCategory", new { id = cat.CategoryId })">Edit</a>
+                <form asp-action="DeleteCategory" method="post" style="display:inline;">
+                    <input type="hidden" name="id" value="@cat.CategoryId" />
+                    <button type="submit" class="btn btn-sm btn-danger" onclick="return confirm('Delete this category?');">Delete</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

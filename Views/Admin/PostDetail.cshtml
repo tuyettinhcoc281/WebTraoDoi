@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model ExchangeWebsite.Models.Post
+
+@{
+    ViewData["Title"] = "Post Detail";
+}
+
+<div class="container py-4">
+    <h2>@Model.Title</h2>
+    <div class="mb-3">
+        <strong>Category:</strong> @Model.Category?.CategoryName <br />
+        <strong>Posted by:</strong> @Model.User?.UserName <br />
+        <strong>Price:</strong> $@Model.Price <br />
+        <strong>City:</strong> @Model.City <br />
+        <strong>Condition:</strong> @Model.Condition <br />
+        <strong>Description:</strong> @Model.Description <br />
+        <strong>Posted At:</strong> @Model.PostedAt.ToString("g") <br />
+    </div>
+    <div class="mb-3">
+        <strong>Images:</strong>
+        <div>
+            @foreach (var img in Model.PostImages)
+            {
+                <img src="@img.ImagePath" alt="Post Image" style="max-width:150px; margin:5px;" />
+            }
+        </div>
+    </div>
+    <form asp-action="DeletePost" asp-route-id="@Model.PostId" method="post" onsubmit="return confirm('Are you sure you want to delete this post?');">
+        <button type="submit" class="btn btn-danger">Delete Post</button>
+        <a asp-action="Posts" class="btn btn-secondary">Back to Posts</a>
+    </form>
+</div>

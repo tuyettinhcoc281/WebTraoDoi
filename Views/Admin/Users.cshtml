@@ -1,0 +1,52 @@
+@model IEnumerable<ExchangeWebsite.Models.User>
+@{
+    ViewData["Title"] = "Users";
+}
+<h2>Users</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>VIP</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        <tr>
+            <td>@user.UserName</td>
+            <td>@user.Email</td>
+            <td>@(user.IsVip ? "Yes" : "No")</td>
+            <td>
+                @if (user.LockoutEnd != null && user.LockoutEnd > DateTime.UtcNow)
+                {
+                    <span class="text-danger">Locked</span>
+                }
+                else
+                {
+                    <span class="text-success">Active</span>
+                }
+            </td>
+            <td>
+                @if (user.LockoutEnd == null || user.LockoutEnd < DateTime.UtcNow)
+                {
+                    <form asp-action="LockUser" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-sm btn-warning">Lock</button>
+                    </form>
+                }
+                else
+                {
+                    <form asp-action="UnlockUser" method="post" style="display:inline;">
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-sm btn-success">Unlock</button>
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

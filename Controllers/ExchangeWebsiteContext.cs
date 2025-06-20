@@ -15,7 +15,9 @@ public class ExchangeWebsiteContext : IdentityDbContext<IdentityUser>
     public DbSet<Category> Categories { get; set; } = null!;
     public DbSet<Post> Posts { get; set; } = null!;
     public DbSet<PostImage> PostImages { get; set; } = null!;
-
+    public DbSet<ExchangeWebsite.Models.Comment> Comments { get; set; }
+    public DbSet<Bill> Bills { get; set; }
+    public DbSet<Report> Reports { get; set; }
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);

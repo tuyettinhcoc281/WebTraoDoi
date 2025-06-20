@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ExchangeWebsite.Models.Post>
+@{
+    ViewData["Title"] = "Shipping Requests";
+}
+
+<h2>Shipping Requests</h2>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>City</th>
+            <th>Contact Email</th>
+            <th>Phone</th>
+            <th>User</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var post in Model)
+    {
+        <tr>
+            <td>@post.Title</td>
+            <td>@post.City</td>
+            <td>@post.ContactEmail</td>
+            <td>@post.PhoneNumber</td>
+            <td>@post.User?.UserName</td>
+            <td>
+                <a asp-controller="Category" asp-action="Post" asp-route-id="@post.PostId" class="btn btn-sm btn-info">View Post</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,12 +1,25 @@
 @model ExchangeWebsite.Models.Post
+<<<<<<< Updated upstream
+=======
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<ExchangeWebsite.Models.User> UserManager
+@inject SignInManager<ExchangeWebsite.Models.User> SignInManager
+@using ExchangeWebsite.Models
+>>>>>>> Stashed changes
 
 @{
     ViewData["Title"] = Model.Title;
     var userId = User.Identity.IsAuthenticated ? User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value : null;
+    var isAdmin = User.Identity.IsAuthenticated && UserManager.IsInRoleAsync(await UserManager.GetUserAsync(User), "Admin").Result;
+    var isOwner = User.Identity.IsAuthenticated && Model.UserId == UserManager.GetUserId(User);
+    var showShippingButton = User.Identity.IsAuthenticated && !Model.ShippingRequested && Model.UserId == userId;
 }
 
 <style>
-    body { background: linear-gradient(135deg, #f4f8ff 0%, #eaf1fb 100%); }
+    body {
+        background: linear-gradient(135deg, #f4f8ff 0%, #eaf1fb 100%);
+    }
+
     .post-detail-card {
         background: #f4f8ff;
         border-radius: 18px;
@@ -16,36 +29,42 @@
         padding: 36px 32px 32px 32px;
         animation: fadeInUp 1.2s;
     }
+
     .post-title {
         font-size: 2.1rem;
         font-weight: 800;
         color: #3867f6;
         margin-bottom: 10px;
     }
+
     .post-meta {
         color: #888;
         font-size: 1rem;
         margin-bottom: 18px;
     }
+
     .post-imgs {
         display: flex;
         gap: 16px;
         margin-bottom: 18px;
         flex-wrap: wrap;
     }
-    .post-imgs img {
-        width: 180px;
-        height: 120px;
-        object-fit: cover;
-        border-radius: 10px;
-        background: #eaf1fb;
-        box-shadow: 0 2px 8px rgba(56,103,246,0.08);
-    }
+
+        .post-imgs img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+            background: #eaf1fb;
+            box-shadow: 0 2px 8px rgba(56,103,246,0.08);
+        }
+
     .post-desc {
         font-size: 1.1rem;
         color: #444;
         margin-bottom: 18px;
     }
+
     .post-info-list {
         list-style: none;
         padding: 0;
@@ -53,9 +72,11 @@
         font-size: 1.05rem;
         color: #333;
     }
-    .post-info-list li {
-        margin-bottom: 8px;
-    }
+
+        .post-info-list li {
+            margin-bottom: 8px;
+        }
+
     .delete-btn {
         background: #ff4d4f;
         color: #fff;
@@ -69,13 +90,58 @@
         box-shadow: 0 2px 8px rgba(255,77,79,0.08);
         margin-top: 18px;
     }
-    .delete-btn:hover {
-        background: #d9363e;
-        color: #fff;
+
+        .delete-btn:hover {
+            background: #d9363e;
+            color: #fff;
+        }
+
+    .author-badge {
+        display: inline-flex;
+        align-items: center;
+        background: linear-gradient(90deg, #ffd700 0%, #ffe066 100%);
+        color: #b8860b;
+        font-weight: 700;
+        font-size: 0.85rem;
+        border-radius: 12px;
+        padding: 2px 10px 2px 7px;
+        margin-left: 8px;
+        box-shadow: 0 1px 4px rgba(255, 215, 0, 0.12);
+        letter-spacing: 0.5px;
+        border: 1px solid #ffe066;
+        gap: 4px;
     }
+
+        .author-badge svg {
+            width: 1em;
+            height: 1em;
+            margin-right: 3px;
+            vertical-align: middle;
+            fill: #b8860b;
+        }
+
+    .admin-badge {
+        display: inline-block;
+        background: #dc3545;
+        color: #fff;
+        font-weight: 700;
+        font-size: 0.85rem;
+        border-radius: 12px;
+        padding: 2px 10px 2px 10px;
+        margin-left: 8px;
+        letter-spacing: 0.5px;
+    }
+
     @@keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(40px);}
-        to { opacity: 1; transform: translateY(0);}
+        from {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 </style>
 
@@ -86,6 +152,10 @@
         @if (Model.Category != null)
         {
             <span> | <b>@Model.Category.CategoryName</b></span>
+        }
+        @if (Model.User != null)
+        {
+            <span> | Posted by <b>@Model.User.UserName</b></span>
         }
     </div>
     @if (Model.PostImages != null && Model.PostImages.Any())
@@ -105,12 +175,164 @@
         <li><b>Condition:</b> @Model.Condition</li>
         <li><b>Language:</b> @Model.Language</li>
     </ul>
-    @if (User.Identity.IsAuthenticated && Model.UserId == userId)
+    @if (isAdmin || isOwner)
     {
-        <form asp-action="DeletePost" asp-controller="Category" method="post" onsubmit="return confirm('Are you sure you want to delete this post?');">
+        <form asp-action="DeletePost" asp-controller="Category" method="post" onsubmit="return confirm('Are you sure you want to delete this post?');" style="display:inline;">
             @Html.AntiForgeryToken()
             <input type="hidden" name="id" value="@Model.PostId" />
             <button type="submit" class="delete-btn">Delete Post</button>
         </form>
     }
+<<<<<<< Updated upstream
 </div>
+=======
+    @if (User.Identity.IsAuthenticated && Model.UserId != userId)
+    {
+        <button id="showReportBtn" class="btn btn-outline-danger ms-2" type="button" onclick="toggleReportForm()">Report</button>
+        <div id="reportForm" style="display:none; margin-top:16px;">
+            <form asp-action="ReportPost" asp-controller="Category" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="postId" value="@Model.PostId" />
+                <textarea name="description" class="form-control" rows="2" placeholder="Describe the issue..." required></textarea>
+                <button type="submit" class="btn btn-danger mt-2">Send</button>
+                <button type="button" class="btn btn-link mt-2" onclick="toggleReportForm()">Cancel</button>
+            </form>
+        </div>
+        <script>
+            function toggleReportForm() {
+                var form = document.getElementById('reportForm');
+                form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+            }
+        </script>
+    }
+    @if (showShippingButton)
+    {
+        <button id="showShippingBtn" class="btn btn-outline-success mt-2" type="button" onclick="toggleShippingForm()">Shipping Okay?</button>
+        <div id="shippingForm" style="display:none; margin-top:16px;">
+            <div class="text-danger mb-2">
+                ReU provides shipping: <br />
+                <b>20,000 VND</b> if in the same city, <b>50,000 VND</b> for other cities.
+            </div>
+            <form asp-action="RequestShipping" asp-controller="Category" method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="postId" value="@Model.PostId" />
+                <button type="submit" class="btn btn-danger">Contact ReU for Shipping</button>
+                <button type="button" class="btn btn-link" onclick="toggleShippingForm()">Cancel</button>
+            </form>
+        </div>
+        <script>
+            function toggleShippingForm() {
+                var form = document.getElementById('shippingForm');
+                form.style.display = (form.style.display === 'none' || form.style.display === '') ? 'block' : 'none';
+            }
+        </script>
+    }
+    @if (Model.ShippingRequested)
+    {
+        <div class="text-success mt-2"><b>Shipping request sent to ReU!</b></div>
+    }
+</div>
+
+<div class="comments-section" style="margin-top:40px;">
+    <h4>Comments</h4>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <form asp-action="Add" asp-controller="Comment" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="postId" value="@Model.PostId" />
+            <textarea name="content" class="form-control" rows="2" placeholder="Add a comment..." required></textarea>
+            <button type="submit" class="btn btn-primary mt-2">Comment</button>
+        </form>
+    }
+    else
+    {
+        <div>Please <a href="/Identity/Account/Login">login</a> to comment.</div>
+    }
+
+    <div class="mt-4">
+        @if (Model.Comments != null)
+        {
+            @foreach (var comment in Model.Comments.Where(c => c.ParentCommentId == null).OrderByDescending(c => c.CreatedAt))
+            {
+                <div class="mb-3 p-2" style="background:#f8f9fa; border-radius:8px;">
+                    <b>
+                        @comment.User?.UserName
+                        @if (comment.UserId == Model.UserId)
+                        {
+                            <span class="author-badge">
+                                <svg viewBox="0 0 20 20"><path d="M10 2l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32-3.87-3.77 5.34-.78z" /></svg>
+                                Author
+                            </span>
+                        }
+                        @if (IsAdmin(comment.UserId))
+                        {
+                            <span class="admin-badge">Admin</span>
+                        }
+                    </b>
+                    <span style="color:#888;">@comment.CreatedAt.ToString("g")</span>
+                    <div>@comment.Content</div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form asp-action="Add" asp-controller="Comment" method="post" class="mt-2">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="postId" value="@Model.PostId" />
+                            <input type="hidden" name="parentCommentId" value="@comment.CommentId" />
+                            <input type="text" name="content" class="form-control" placeholder="Reply..." required />
+                            <button type="submit" class="btn btn-link btn-sm">Reply</button>
+                        </form>
+                    }
+                    @if (comment.Replies != null && comment.Replies.Any())
+                    {
+                        <div class="ml-4 mt-2">
+                            @foreach (var reply in comment.Replies.OrderBy(r => r.CreatedAt))
+                            {
+                                <div class="mb-2 p-2" style="background:#eef2fa; border-radius:8px;">
+                                    <b>
+                                        @reply.User?.UserName
+                                        @if (reply.UserId == Model.UserId)
+                                        {
+                                            <span class="author-badge">
+                                                <svg viewBox="0 0 20 20"><path d="M10 2l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.51.91-5.32-3.87-3.77 5.34-.78z" /></svg>
+                                                Author
+                                            </span>
+                                        }
+                                        @if (IsAdmin(reply.UserId))
+                                        {
+                                            <span class="admin-badge">Admin</span>
+                                        }
+                                    </b>
+                                    <span style="color:#888;">@reply.CreatedAt.ToString("g")</span>
+                                    <div>@reply.Content</div>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        }
+    </div>
+</div>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="mt-5">
+        <h5>Report this post</h5>
+        <form asp-action="ReportPost" asp-controller="Category" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" name="postId" value="@Model.PostId" />
+            <textarea name="description" class="form-control" rows="2" placeholder="Describe the issue..." required></textarea>
+            <button type="submit" class="btn btn-danger mt-2">Report</button>
+        </form>
+    </div>
+}
+
+@functions {
+    public bool IsAdmin(string userId)
+    {
+        if (string.IsNullOrEmpty(userId)) return false;
+        var user = UserManager.FindByIdAsync(userId).Result;
+        if (user == null) return false;
+        return UserManager.IsInRoleAsync(user, "Admin").Result;
+    }
+}
+>>>>>>> Stashed changes

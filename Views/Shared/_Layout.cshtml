@@ -59,6 +59,9 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 
+    @using Microsoft.AspNetCore.Identity
+    @inject UserManager<User> UserManager
+
     <!-- Header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -77,6 +80,18 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var currentUser = await UserManager.GetUserAsync(User);
+                            var isAdmin = await UserManager.IsInRoleAsync(currentUser, "Admin");
+                            if (isAdmin)
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-danger" asp-controller="Admin" asp-action="Index">Admin Dashboard</a>
+                                </li>
+                            }
+                        }
                     </ul>
 
                     <!-- Search Bar -->

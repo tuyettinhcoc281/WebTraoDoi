@@ -36,16 +36,19 @@ namespace ExchangeWebsite.Controllers
             return View(category);
         }
 
-        public IActionResult Post(int id)
+        public async Task<IActionResult> Post(int id)
         {
-            var post = _context.Posts
+            var post = await _context.Posts
+                .Include(p => p.User) // <-- Add this line
                 .Include(p => p.PostImages)
                 .Include(p => p.Category)
-                .FirstOrDefault(p => p.PostId == id);
+                .Include(p => p.Comments)
+                    .ThenInclude(c => c.User)
+                .Include(p => p.Comments)
+                    .ThenInclude(c => c.Replies)
+                .FirstOrDefaultAsync(p => p.PostId == id);
 
-            if (post == null)
-                return NotFound();
-
+            if (post == null) return NotFound();
             return View(post);
         }
 
@@ -280,6 +283,47 @@ namespace ExchangeWebsite.Controllers
 
             TempData["SuccessMessage"] = "Post deleted successfully!";
             return RedirectToAction("MyPost");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ReportPost(int postId, string description)
+        {
+            if (!User.Identity.IsAuthenticated) return Unauthorized();
+
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrWhiteSpace(description) || string.IsNullOrWhiteSpace(userId))
+                return RedirectToAction("Post", new { id = postId });
+
+            var report = new Report
+            {
+                PostId = postId,
+                ReporterId = userId,
+                Description = description,
+                CreatedAt = DateTime.UtcNow
+            };
+
+            _context.Reports.Add(report);
+            await _context.SaveChangesAsync();
+
+            TempData["ReportSuccess"] = "Thank you for your report!";
+            return RedirectToAction("Post", new { id = postId });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> RequestShipping(int postId)
+        {
+            var post = await _context.Posts.FindAsync(postId);
+            var userId = _userManager.GetUserId(User);
+            if (post == null || post.UserId != userId)
+                return Forbid();
+
+            post.ShippingRequested = true;
+            await _context.SaveChangesAsync();
+
+            TempData["ShippingRequested"] = true;
+            return RedirectToAction("Post", new { id = postId });
         }
     }
 }

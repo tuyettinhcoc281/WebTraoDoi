@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ExchangeWebsite\\ExchangeWebsite.csproj": {}
+    "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj": {}
   },
   "projects": {
-    "F:\\ExchangeWebsite\\ExchangeWebsite.csproj": {
+    "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
+        "projectUniqueName": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
         "projectName": "ExchangeWebsite",
-        "projectPath": "F:\\ExchangeWebsite\\ExchangeWebsite.csproj",
+        "projectPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\ExchangeWebsite.csproj",
         "packagesPath": "C:\\Users\\duyba\\.nuget\\packages\\",
-        "outputPath": "F:\\ExchangeWebsite\\obj\\",
+        "outputPath": "F:\\CheckHUST\\WebTraoDoi\\WebTraoDoi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\VS2022SDK\\NuGetPackages"
@@ -50,6 +50,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.17, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.11, )"
@@ -77,6 +81,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.12.1, )"
             }
           },
           "imports": [
